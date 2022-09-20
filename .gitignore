@@ -47,6 +47,9 @@ quantum/version.h
 .settings/
 .vagrant/
 
+# C ccls
+.ccls*
+
 # ?
 .dep
 .history/
