@@ -37,7 +37,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                 KC_LALT,   MO(_LOWER),  KC_LGUI,         KC_SPC,  MO(_RAISE) ,KC_RALT                      
                                       //`--------------------------'  `--------------------------'
-
   ),
 
   [_LOWER] = LAYOUT_split_3x6_3(
@@ -68,9 +67,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
       QK_BOOT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_7    , KC_8   , KC_9  , KC_KB_VOLUME_DOWN, KC_KB_VOLUME_UP, KC_MEDIA_PLAY_PAUSE,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, XXXXXXX, XXXXXXX,                      KC_4    , KC_5   , KC_6  , KC_MEDIA_PREV_TRACK, KC_MEDIA_NEXT_TRACK, XXXXXXX,
+      RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, XXXXXXX, XXXXXXX,                      KC_4    , KC_5   , KC_6  , KC_MEDIA_PREV_TRACK, KC_MEDIA_NEXT_TRACK, KC_BRIGHTNESS_UP,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, XXXXXXX, XXXXXXX,                      KC_1    , KC_2   , KC_3  , KC_BRIGHTNESS_DOWN, KC_BRIGHTNESS_UP, XXXXXXX,
+      RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, XXXXXXX, XXXXXXX,                      KC_1    , KC_2   , KC_3  , KC_COMM, KC_DOT,  KC_BRIGHTNESS_DOWN,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LGUI, _______,  KC_SPC,     KC_ENT, _______, KC_0
                                       //`--------------------------'  `--------------------------'
