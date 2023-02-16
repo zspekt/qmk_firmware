@@ -65,13 +65,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_ADJUST] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      QK_BOOT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_7    , KC_8   , KC_9  , KC_KB_VOLUME_DOWN, KC_KB_VOLUME_UP, KC_BSPC,
+      QK_BOOT, KC_F10, KC_F11, KC_F7, KC_F8, KC_F9,                             KC_7, KC_8, KC_9  , KC_KB_VOLUME_DOWN, KC_KB_VOLUME_UP, KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, XXXXXXX, XXXXXXX,                      KC_4    , KC_5   , KC_6  , KC_MEDIA_PREV_TRACK, KC_MEDIA_NEXT_TRACK, KC_BRIGHTNESS_UP,
+      KC_CAPS_LOCK, KC_F12, XXXXXXX, KC_F4, KC_F5, KC_F6,                       KC_4, KC_5, KC_6, KC_MEDIA_PREV_TRACK, KC_MEDIA_NEXT_TRACK, KC_BRIGHTNESS_UP,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, XXXXXXX, XXXXXXX,                      KC_1    , KC_2   , KC_3  , KC_COMM, KC_DOT,  KC_BRIGHTNESS_DOWN,
+      XXXXXXX, XXXXXXX, XXXXXXX, KC_F1, KC_F2, KC_F3,                           KC_1 , KC_2, KC_3  , KC_COMM, KC_DOT,  KC_BRIGHTNESS_DOWN,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LGUI, _______,  KC_SPC,     KC_MEDIA_PLAY_PAUSE, _______, KC_0
+                                          KC_LALT, _______,  KC_SPC,     KC_MEDIA_PLAY_PAUSE, _______, KC_0
                                       //`--------------------------'  `--------------------------'
   )
 };
