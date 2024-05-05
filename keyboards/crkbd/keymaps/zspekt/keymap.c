@@ -35,19 +35,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCTL,   KC_Z,    KC_X,   KC_C,  KC_V,  KC_B,                            KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH,  MT(MOD_RSFT, KC_ENT),
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                KC_LALT,   MO(_LOWER),  KC_LGUI,         KC_SPC,  MO(_RAISE) ,KC_RALT
+                                LALT_T(KC_TAB), MO(_LOWER),  KC_LGUI,         KC_SPC,  MO(_RAISE) ,KC_RALT
                                       //`--------------------------'  `--------------------------'
   ),
 
+
   [_LOWER] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      KC_TAB, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                        XXXXXXX, KC_PGUP, XXXXXXX,   KC_PGDN,  XXXXXXX,  KC_BSPC,
+      KC_TAB, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                        XXXXXXX, KC_PGUP, XXXXXXX,   KC_PGDN,  XXXXXXX,  KC_BSPC,
  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      MT(MOD_LSFT,KC_ESC), XXXXXXX, XXXXXXX, KC_6,    KC_7,    KC_8,          KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT, XXXXXXX, XXXXXXX,
+      LSFT_T(KC_ESC), XXXXXXX, XXXXXXX, XXXXXXX,  XXXXXXX, XXXXXXX,              KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCTL, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_HOME, XXXXXXX, KC_END,   XXXXXXX, MT(MOD_RSFT, KC_ENT),
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                        KC_LALT,_______,  KC_LGUI,      KC_SPC,  MO(_ADJUST) ,KC_RALT
+                                        KC_LALT, _______,  KC_LGUI,      KC_SPC,  MO(_ADJUST) ,KC_RALT
                                         //`--------------------------'  `--------------------------'
   ),
 
@@ -55,7 +56,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
       KC_TAB,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                       KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_DEL,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      MT(MOD_LSFT,KC_ESC),  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,         KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, KC_BSLS, KC_GRV,
+      KC_LSFT,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,         KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, KC_BSLS, KC_GRV,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                     KC_TILDE, KC_LPRN, KC_RPRN, KC_LCBR, KC_RCBR, MT(MOD_RSFT, KC_ENT),
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
@@ -65,9 +66,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_ADJUST] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      QK_BOOT, KC_F10, KC_F11, KC_F7, KC_F8, KC_F9,                             KC_7, KC_8, KC_9, KC_KB_VOLUME_DOWN, KC_KB_VOLUME_UP, KC_BSPC,
+     XXXXXXX, KC_F10, KC_F11, KC_F7, KC_F8, KC_F9,                             KC_7, KC_8, KC_9, KC_KB_VOLUME_DOWN, KC_KB_VOLUME_UP, KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_ESC, KC_F12, XXXXXXX, KC_F4, KC_F5, KC_F6,                       KC_4, KC_5, KC_6, KC_COMM, KC_MEDIA_PLAY_PAUSE, KC_BRIGHTNESS_UP,
+      QK_BOOT, KC_F12, XXXXXXX, KC_F4, KC_F5, KC_F6,                       KC_4, KC_5, KC_6, KC_COMM, KC_MEDIA_PLAY_PAUSE, KC_BRIGHTNESS_UP,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_MPRV, KC_MNXT, XXXXXXX, KC_F1, KC_F2, KC_F3,                           KC_1 , KC_2, KC_3, KC_DOT, KC_SLSH, KC_BRIGHTNESS_DOWN,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
