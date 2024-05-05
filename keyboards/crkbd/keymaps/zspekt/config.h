@@ -24,6 +24,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* Select hand configuration */
 
+#define HOLD_ON_OTHER_KEY_PRESS
+
 #define MASTER_LEFT
 // #define MASTER_RIGHT
 // #define EE_HANDS
